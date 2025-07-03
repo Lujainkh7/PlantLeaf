@@ -3,3 +3,5 @@ tensorflow==2.13.0
 Pillow
 numpy
 opencv-python
+streamlit_option_menu
+
