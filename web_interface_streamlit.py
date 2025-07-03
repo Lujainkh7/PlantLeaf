@@ -148,5 +148,5 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-# .\myenv\Scripts\activate
+# .\env_plantleaf\Scripts\activate
 # streamlit run web_interface_streamlit.py
