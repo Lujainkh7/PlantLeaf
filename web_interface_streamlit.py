@@ -6,6 +6,7 @@ from streamlit_option_menu import option_menu
 from PIL import Image, ImageFilter
 from pathlib import Path
 
+st.set_page_config(page_title="PlantLeaf", layout="centered")
 
 def set_background(image_path):
     img_path = Path(image_path)
@@ -75,7 +76,6 @@ class_names = [
 ]
 
 
-st.set_page_config(page_title="PlantLeaf", layout="centered")
 
 # 🌿 شريط التنقل
 selected = option_menu(
