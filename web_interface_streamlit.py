@@ -59,7 +59,7 @@ if language == "English":
 
     menu_labels = {
         "upload": "Choose a leaf image...",
-        "title": "🌿 Intelligent Plant Disease Classifier",
+        "title": "🌿Plant and Leaf Disease Classification",
         "desc": "Upload a leaf image and we'll identify the disease with high accuracy.",
         "diagnosis": "Diagnosis:",
         "about": "PlantLeaf is a simple web app that helps you find out if your plant is sick.Just upload a picture of a leaf, and the app will tell you the disease name in seconds.It’s fast, easy to use, and supports many types of plants.",
@@ -67,7 +67,7 @@ if language == "English":
         "contact": ["Email", "Mobile", "Location"],
           }
 else:
-    menu_options = ["النظام", "حول", "الفريق", "اتصل بنا", "الملف الشخصي"]
+    menu_options = ["الرئيسية", "حول", "الفريق", "اتصل بنا", "الملف الشخصي"]
     menu_labels = {
         "upload": "اختر صورة ورقة...",
         "title": "🌿 تصنيف أمراض النبات",
@@ -87,7 +87,7 @@ selected = option_menu(
 )
 
 # ✅ الصفحة الرئيسية
-if selected in ["plantLeaf", "النظام"]:
+if selected in ["plantLeaf", "الرئيسية"]:
     st.markdown(f"<h2 style='color:#2e7d32;'>{menu_labels['title']}</h2>", unsafe_allow_html=True)
     st.write(menu_labels["desc"])
 
